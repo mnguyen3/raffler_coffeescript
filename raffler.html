@@ -1,0 +1,43 @@
+<html>
+<head>
+	<title>Raffler with Coffee</title>
+	<link rel="stylesheet" href="raffler.css" media="screen">
+</head>
+<body>
+    <header id="header">
+      <h1>Raffler</h1>
+    </header>
+	<div id="container">
+	</div>
+	<!-- Templates -->
+	<script type="text/template" id="item-template">
+		<div id="new">
+            <input id="new_entry" size="60" autofocus>
+            <input type="submit" value="New" id="new-name"/>
+        </div>		
+		
+		<div id="winners">
+			<ul id="name-list">
+				<% _.each(entries, function(entry){ %>
+					<li id='<%- entry.id %>'>
+						<label class="entry-name">  
+							<%- entry.name %>
+							<span class="entry-winner"><% if (entry.winner) { %>WINNER<% } %></span>
+						</label>
+					<% }); %>
+				</li>
+			</ul>
+		</div>
+		
+		<div id='chooser'>
+			<button id="draw">Draw Winner</button>
+			<button id="reset">Reset Winners</button>
+        </div>
+	</script> 
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min.js" type="text/javascript"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.0.0/backbone-min.js" type="text/javascript"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/backbone-localstorage.js/1.1.0/backbone.localStorage-min.js" type="text/javascript"></script>
+	<script src="raffler.js"></script>
+</body>
+</html>

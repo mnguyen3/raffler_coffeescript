@@ -1,0 +1,61 @@
+
+       body {
+        font-family: "Lucida Grande", Lucida, Helvetica, Arial, sans-serif;
+        background: #FFF;
+        color: #333;
+        margin: 0px;
+        padding: 0px;
+      }
+
+      #header {
+        background: #C97E41;
+        margin: 0px;
+        padding: 20px;
+      }
+      #header h1 {
+        font-family: Inconsolata, Monaco, Courier, mono;
+        color: #FFF;
+        margin: 0px;
+        text-align: center;
+      }
+
+      #raffler{
+        width: 500px;
+        margin: 0 auto;
+      }
+
+      .entry-name {
+        font-weight: bold;
+        font-size: 20px;
+      }
+
+      .entry-winner {
+        float:right;
+        font-size: 14px;
+        color: red;
+      }
+
+      #chooser {
+        width: 400px;
+        margin: 0 auto;
+        margin-top: 20px;
+      }
+	
+	  #winners {
+	    width:500px;
+		margin: 0 auto;
+	  }
+	  
+      #new {
+        width: 400px;
+        margin: 0 auto;
+        margin-top: 20px;
+      }
+
+      ul#name-list {
+        list-style-type: none; /* Hides bullet points from  list */
+      }
+
+      ul#name-list li {
+        border-bottom: dashed 1px;
+      }
